@@ -1,0 +1,36 @@
+{
+    "State_Name": {
+        "type": "categorical",
+        "unique_values": 33
+    },
+    "District_Name": {
+        "type": "categorical",
+        "unique_values": 646
+    },
+    "Crop_Year": {
+        "type": "numeric",
+        "min": 1997,
+        "max": 2015
+    },
+    "Season": {
+        "type": "categorical",
+        "values": [
+            "Kharif",
+            "Whole Year",
+            "Autumn",
+            "Rabi",
+            "Summer",
+            "Winter"
+        ]
+    },
+    "Crop": {
+        "type": "categorical",
+        "unique_values": 124
+    },
+    "Area": {
+        "type": "numeric"
+    },
+    "Production": {
+        "type": "numeric"
+    }
+}
