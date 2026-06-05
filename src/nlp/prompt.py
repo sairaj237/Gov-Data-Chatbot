@@ -32,7 +32,7 @@ sum
 avg
 top_n
 trend
-
+distinct
 Return ONLY valid JSON.
 """
 
@@ -102,6 +102,32 @@ Output:
   "operation":"trend",
   "crop":"Rice",
   "state":"Punjab"
+}
+Question:
+What are the different crops?
+
+Output:
+{
+  "operation":"distinct",
+  "column":"Crop"
+}
+
+Question:
+List all crop types.
+
+Output:
+{
+  "operation":"distinct",
+  "column":"Crop"
+}
+
+Question:
+What seasons exist in the dataset?
+
+Output:
+{
+  "operation":"distinct",
+  "column":"Season"
 }
 """
 

@@ -57,6 +57,7 @@ No numbers are generated from the model's prior knowledge.
 * Average production
 * Top N producers
 * Production trends over time
+* Distinct / Unique value discovery
 
 ### Data Validation
 

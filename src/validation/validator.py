@@ -4,9 +4,18 @@ SUPPORTED_OPERATIONS = [
     "sum",
     "avg",
     "top_n",
-    "trend"
+    "trend",
+    "distinct"
 ]
-
+VALID_COLUMNS = [
+            "State_Name",
+            "District_Name",
+            "Crop_Year",
+            "Season",
+            "Crop",
+            "Area",
+            "Production"
+        ]
 
 def validate_query(
     query,
@@ -87,6 +96,18 @@ def validate_query(
             return (
                 False,
                 "n must be greater than 0."
+            )
+
+    # ADD THIS BLOCK HERE
+    if operation == "distinct":
+
+        column = query.get("column")
+
+        if column not in VALID_COLUMNS:
+
+            return (
+                False,
+                f"Column '{column}' not found."
             )
 
     return (

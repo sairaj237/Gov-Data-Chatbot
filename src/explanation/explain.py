@@ -89,5 +89,17 @@ Question:
 Answer:
 Trend chart generated successfully.
 """
+    elif operation == "distinct":
 
+        return f"""
+Question:
+{question}
+
+Answer:
+Found {len(result)} unique values in
+{query['column']}.
+
+Values:
+{', '.join(result[:20])}
+"""
     return str(result)

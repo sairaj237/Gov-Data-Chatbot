@@ -3,7 +3,8 @@ from src.engine.aggregations import (
     min_production,
     total_production,
     average_production,
-    top_n_producers
+    top_n_producers,
+    distinct_values
 )
 
 
@@ -90,6 +91,13 @@ def execute_query(
             df=df,
             crop=crop,
             state=query["state"]
+        )
+
+    elif operation == "distinct":
+
+        return distinct_values(
+            df=df,
+            column=query["column"]
         )
 
     else:

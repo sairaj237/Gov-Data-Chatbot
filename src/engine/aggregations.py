@@ -135,3 +135,18 @@ def top_n_producers(
     )
 
     return result.head(n)
+
+def distinct_values(
+    df,
+    column
+):
+    """
+    Return unique values from a column.
+    """
+
+    return sorted(
+        df[column]
+        .dropna()
+        .unique()
+        .tolist()
+    )
