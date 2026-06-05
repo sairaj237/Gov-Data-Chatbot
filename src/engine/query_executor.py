@@ -62,6 +62,15 @@ def execute_query(
 
     elif operation == "sum":
 
+        if "group_by" in query:
+
+            return (
+                df
+                .groupby(query["group_by"])[query["column"]]
+                .sum()
+                .sort_values(ascending=False)
+            )
+
         return total_production(
             df=df,
             crop=crop,

@@ -43,7 +43,16 @@ Answer:
 Production:
 {result['production']:,.0f}
 """
+    elif operation == "sum" and "group_by" in query:
 
+        return f"""
+    Question:
+    {question}
+
+    Answer:
+    Showing total {query['column']}
+    grouped by {query['group_by']}.
+    """
     elif operation == "sum":
 
         return f"""
