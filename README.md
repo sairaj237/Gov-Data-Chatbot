@@ -357,18 +357,13 @@ Benefits:
 
 ---
 
-## Screenshots
+Contributing
 
-Add screenshots here:
+Contributions are welcome!
 
-* Main application
-* Query execution
-* Trend visualization
-* Out-of-scope handling
+If you'd like to improve the project by adding new analytical operations, enhancing the LLM query parser, improving visualizations, fixing bugs, or expanding dataset support, feel free to open an issue or submit a pull request.
 
----
+Please check the existing issues before creating a new one. Feedback, suggestions, and feature requests are always appreciated.
 
-## Author
 
-Sairaj Magdum
 
